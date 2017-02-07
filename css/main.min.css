@@ -1,0 +1,257 @@
+/* CSS Document */
+/* =============================================================================
+   HTML5 Boilerplate CSS: h5bp.com/css
+   ========================================================================== */
+* {
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 100%;
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility; }
+
+html, button, input, select, textarea {
+  font-size: 1em;
+  font-family: 'museo-slab', 'Georgia', serif;
+  color: #222; }
+
+body {
+  overflow-y: scroll;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1em;
+  line-height: 1.4;
+  font-size: 16px;
+  font-family: 'museo-slab', 'Georgia', serif; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover, a:active {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+blockquote {
+  margin: 1em 40px; }
+
+dfn {
+  font-style: italic; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+small {
+  font-size: 85%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+ul, ol {
+  margin: 0 0;
+  padding: 0 0 0 0; }
+
+li {
+  display: block; }
+
+dd {
+  margin: 0 0 0 40px; }
+
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0; }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+/* ===== Primary Styles ========================================================
+   Author: Nick Jones / The Experiment
+   ========================================================================== */
+body {
+  background-color: #f0eae7; }
+
+.nav {
+  background: #fff url(../images/logo.png) no-repeat 0 0; }
+
+li {
+  list-style-type: none; }
+
+#menu {
+  position: relative; }
+
+#menu a {
+  padding-left: 20px; }
+
+#menu a:before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 1em;
+  width: 2em;
+  height: 4px;
+  border-top: 10px double #000;
+  border-bottom: 3px solid #000; }
+
+.sub-menu {
+  top: 0rem;
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.nav-up {
+  opacity: 0; }
+
+.hero .hero-text-bg {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #383838; }
+
+.join {
+  background-color: #f0eae7; }
+
+.product-new-arrivals .new-details {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #383838; }
+
+.product-outerwear .outerwear-details {
+  background-color: rgba(149, 93, 106, 0.9); }
+
+.product-tops .tops-details {
+  background-color: rgba(223, 180, 153, 0.9); }
+
+.product-dresses .dresses-details {
+  background-color: rgba(105, 117, 131, 0.9); }
+
+#back, #next {
+  border-bottom: solid 2px #dedede;
+  position: fixed;
+  bottom: 0;
+  opacity: .5;
+  -webkit-transition: all 0.2s 0s ease-out;
+  -moz-transition: all 0.2s 0s ease-out;
+  -o-transition: all 0.2s 0s ease-out;
+  -ms-transition: all 0.2s 0s ease-out;
+  transition: all 0.2s 0s ease-out;
+  -moz-transition-duration: 0.2s;
+  -moz-transition-property: all;
+  -moz-transition-delay: 0s; }
+  #back:hover, #next:hover {
+    opacity: 1;
+    font-size: .65em; }
+
+#next {
+  right: 0;
+  padding: 20px 30px 20px 0px; }
+
+#back {
+  left: 0;
+  padding: 20px 0px 20px 30px; }
+
+/* =============================================================================
+   Non-Semantic Helper Classes
+   ========================================================================== */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  *line-height: 0; }
+
+.ir br {
+  display: none; }
+
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
