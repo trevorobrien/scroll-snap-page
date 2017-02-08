@@ -123,13 +123,13 @@ img {
   -ms-interpolation-mode: bicubic; }
 
 /* ===== Primary Styles ========================================================
-   Author: Nick Jones / The Experiment
+   Author: Trevor / EON
    ========================================================================== */
 body {
   background-color: #f0eae7; }
 
 .nav {
-  background: #fff url(../images/logo.png) no-repeat 0 0; }
+  background: #fff url(../images/menu-bg-mobile.png); }
 
 li {
   list-style-type: none; }
@@ -147,8 +147,8 @@ li {
   left: 1em;
   width: 2em;
   height: 4px;
-  border-top: 10px double #000;
-  border-bottom: 3px solid #000; }
+  border-top: 10px double #fff;
+  border-bottom: 3px solid #fff; }
 
 .sub-menu {
   top: 0rem;

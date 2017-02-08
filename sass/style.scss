@@ -180,7 +180,7 @@ img {
 }
 
 /* ===== Primary Styles ========================================================
-   Author: Nick Jones / The Experiment
+   Author: Trevor / EON
    ========================================================================== */
 
 body {
@@ -189,7 +189,7 @@ body {
 
 .nav {
 
-  background: #fff url(../images/logo.png) no-repeat 0 0;
+  background: #fff url(../images/menu-bg-mobile.png);
 
 }
 
@@ -211,8 +211,8 @@ li {
     left: 1em;
     width: 2em;
     height:4px;
-    border-top: 10px double #000;
-    border-bottom: 3px solid #000;
+    border-top: 10px double #fff;
+    border-bottom: 3px solid #fff;
 }
 
 .sub-menu {
