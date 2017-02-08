@@ -129,7 +129,7 @@ body {
   background-color: #f0eae7; }
 
 .nav {
-  background: #fff url(../images/menu-bg-mobile.png); }
+  background: #fff; }
 
 li {
   list-style-type: none; }
@@ -147,8 +147,8 @@ li {
   left: 1em;
   width: 2em;
   height: 4px;
-  border-top: 10px double #fff;
-  border-bottom: 3px solid #fff; }
+  border-top: 10px double #111;
+  border-bottom: 3px solid #111; }
 
 .sub-menu {
   top: 0rem;
