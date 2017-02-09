@@ -159,6 +159,62 @@ li {
 .nav-up {
   opacity: 0; }
 
+.overlay {
+  left: -30rem;
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.variations {
+  display: inline-block; }
+  .variations li {
+    width: 70px;
+    margin: 15px 20px;
+    display: inline-block;
+    vertical-align: top; }
+    .variations li ul li {
+      margin: 0;
+      text-align: left;
+      display: block; }
+
+.close {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  overflow: hidden; }
+  .close:hover::before, .close:hover::after {
+    background: #000; }
+  .close::before, .close::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #000; }
+  .close::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .close::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  .close.big {
+    -webkit-transform: scale(3);
+    -moz-transform: scale(3);
+    -o-transform: scale(3);
+    transform: scale(3); }
+  .close.hairline::before, .close.hairline::after {
+    height: 1px; }
+
+.in {
+  left: 0; }
+
 .hero .hero-text-bg {
   background-color: rgba(255, 255, 255, 0.9);
   color: #383838; }

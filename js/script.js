@@ -74,6 +74,14 @@ $(function(){
     }
   });
 
+  $('.hamburger').on('click',function (e) {
+    $('.overlay').addClass('in');
+  })
+
+  $('.close').on('click',function (e) {
+    $('.overlay').removeClass('in');
+  })
+
   $(window).scroll(function() {
     $('.sale-name').css('top', ($('.carousel-image').height() - $('body').scrollTop() / 4));
   }); 
