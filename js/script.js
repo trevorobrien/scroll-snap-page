@@ -74,16 +74,100 @@ $(function(){
     }
   });
 
-  $('.hamburger').on('click',function (e) {
-    $('.overlay').addClass('in');
-  })
+  // $('.hamburger').on('click',function (e) {
+  //   $('.overlay').addClass('in');
+  // })
 
-  $('.close').on('click',function (e) {
-    $('.overlay').removeClass('in');
-  })
+  // $('.close').on('click',function (e) {
+  //   $('.overlay').removeClass('in');
+  // })
+
 
   $(window).scroll(function() {
     $('.sale-name').css('top', ($('.carousel-image').height() - $('body').scrollTop() / 4));
   }); 
-
 })
+
+  var nav = document.querySelector('.hamburger');
+  var close = document.querySelector('.close');
+
+
+  var toggleState = function (elem, one, two) {
+    var elem = document.querySelector(elem);
+    // elem.className += "";
+    elem.setAttribute('data-state', elem.getAttribute('data-state') === one ? two : one);
+  };
+
+  nav.onclick = function (e) {
+    toggleState('.overlay', 'closed', 'open');
+    e.preventDefault();
+  };
+
+  close.onclick = function (e) {
+    toggleState('.overlay', 'closed', 'open');
+    e.preventDefault();
+  };
+
+  var prefix = getBrowserPrefix();
+  var hidden = hiddenProperty(prefix);
+  var visibilityState = visibilityState(prefix);
+  var visibilityEvent = visibilityEvent(prefix);
+
+  document.addEventListener(visibilityEvent, function(event) {
+          if (document[hidden]) {
+              $('.overlay').addClass('in');
+              console.log('in')
+              
+          } else {
+              console.log('out')
+          }
+    });
+
+  // Get Browser-Specifc Prefix
+  function getBrowserPrefix() {
+     
+    // Check for the unprefixed property.
+    if ('hidden' in document) {
+      return null;
+    }
+   
+    // All the possible prefixes.
+    var browserPrefixes = ['moz', 'ms', 'o', 'webkit'];
+   
+    for (var i = 0; i < browserPrefixes.length; i++) {
+      var prefix = browserPrefixes[i] + 'Hidden';
+      if (prefix in document) {
+        return browserPrefixes[i];
+      }
+    }
+   
+    // The API is not supported in browser.
+    return null;
+  }
+   
+  // Get Browser Specific Hidden Property
+  function hiddenProperty(prefix) {
+    if (prefix) {
+      return prefix + 'Hidden';
+    } else {
+      return 'hidden';
+    }
+  }
+   
+  // Get Browser Specific Visibility State
+  function visibilityState(prefix) {
+    if (prefix) {
+      return prefix + 'VisibilityState';
+    } else {
+      return 'visibilityState';
+    }
+  }
+   
+  // Get Browser Specific Event
+  function visibilityEvent(prefix) {
+    if (prefix) {
+      return prefix + 'visibilitychange';
+    } else {
+      return 'visibilitychange';
+    }
+  }

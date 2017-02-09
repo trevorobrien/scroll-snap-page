@@ -160,10 +160,15 @@ li {
   opacity: 0; }
 
 .overlay {
-  left: -30rem;
   opacity: 1;
   -webkit-transition: all 1s ease;
   transition: all 1s ease; }
+
+.overlay[data-state=closed] {
+  left: -30rem; }
+
+.overlay[data-state=open] {
+  left: 0; }
 
 .variations {
   display: inline-block; }
@@ -211,9 +216,6 @@ li {
     transform: scale(3); }
   .close.hairline::before, .close.hairline::after {
     height: 1px; }
-
-.in {
-  left: 0; }
 
 .hero .hero-text-bg {
   background-color: rgba(255, 255, 255, 0.9);

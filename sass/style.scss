@@ -228,10 +228,17 @@ li {
 }
 
 .overlay {
-  left: -30rem;
   opacity: 1;
    -webkit-transition: all 1s ease;
    transition: all 1s ease;
+}
+
+.overlay[data-state=closed] {
+  left: -30rem;
+}
+
+.overlay[data-state=open] {
+  left: 0;
 }
 
 .variations {
@@ -288,9 +295,7 @@ li {
     }
   }
 }
-.in {
-  left: 0;
-}
+
 
 .hero {
    .hero-text-bg {
