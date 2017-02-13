@@ -33,6 +33,10 @@ body {
   font-size: 16px;
   font-family: 'museo-slab', 'Georgia', serif; }
 
+a {
+  color: #222;
+  text-decoration: none; }
+
 a:focus {
   outline: thin dotted; }
 
@@ -102,7 +106,7 @@ sup {
 sub {
   bottom: -0.25em; }
 
-ul, ol {
+ul, ol, figure {
   margin: 0 0;
   padding: 0 0 0 0; }
 
@@ -129,7 +133,11 @@ body {
   background-color: #f0eae7; }
 
 .nav {
-  background: #fff; }
+  background: #fff;
+  opacity: 1; }
+
+.nav-fade {
+  opacity: 0.8; }
 
 li {
   list-style-type: none; }
@@ -156,7 +164,7 @@ li {
   -webkit-transition: all 1s ease;
   transition: all 1s ease; }
 
-.nav-up {
+.sub-menu-up {
   opacity: 0; }
 
 .overlay {
@@ -216,6 +224,83 @@ li {
     transform: scale(3); }
   .close.hairline::before, .close.hairline::after {
     height: 1px; }
+
+.menu-wrp {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -ms-transition: all 400ms 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition-delay: 0;
+  -moz-transition-delay: 0;
+  -webkit-transition-delay: 0;
+  -o-transition-delay: 0;
+  -ms-transition-delay: 0; }
+
+.diy-slideshow {
+  position: relative;
+  display: block;
+  overflow: hidden; }
+
+figure {
+  position: absolute;
+  opacity: 0;
+  transition: 1s opacity; }
+
+figcaption {
+  position: absolute;
+  font-family: sans-serif;
+  font-size: .8em;
+  bottom: .75em;
+  right: .35em;
+  padding: .25em;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 2px; }
+
+figcaption a {
+  color: #fff; }
+
+figure.show {
+  opacity: 1;
+  position: static;
+  transition: 1s opacity; }
+
+.next, .prev {
+  color: #fff;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  top: 50%;
+  z-index: 1;
+  font-size: 2em;
+  margin-top: -.75em;
+  opacity: .3;
+  user-select: none; }
+
+.next:hover, .prev:hover {
+  cursor: pointer;
+  opacity: 1; }
+
+.next {
+  right: 0;
+  padding: 10px 5px 15px 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
+
+.prev {
+  left: 0;
+  padding: 10px 10px 15px 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; }
+
+p {
+  margin: 10px 20px;
+  color: #fff; }
 
 .hero .hero-text-bg {
   background-color: rgba(255, 255, 255, 0.9);

@@ -990,6 +990,12 @@ pos-s {
 .d-f {
   display: flex;
 }
+.d-tbl {
+  display: table;
+}
+.d-tbl-c {
+  display: table-cell;
+}
 
 /*Flexbox for IE10*/
 .ie-d-f {
@@ -5494,6 +5500,18 @@ pos-s {
   top: 50%;
   left: 50%;
   transform: translate3d(-50%,-50%,0);
+}
+
+.center-v-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 @media (min-width: 767px) {
