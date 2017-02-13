@@ -416,6 +416,15 @@ p{
  }
 }
 
+.circled {
+  border: 3px solid #000000;
+  border-radius: 50%;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+}
+
 footer{
   // position: fixed;
   // bottom: 0;

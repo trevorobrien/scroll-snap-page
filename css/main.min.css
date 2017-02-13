@@ -322,6 +322,14 @@ p {
 .product-dresses .dresses-details {
   background-color: rgba(105, 117, 131, 0.9); }
 
+.circled {
+  border: 3px solid #000000;
+  border-radius: 50%;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  text-align: center; }
+
 #back, #next {
   border-bottom: solid 2px #dedede;
   position: fixed;
