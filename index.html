@@ -79,18 +79,26 @@
   </section>
 
    <section class="pos-r t-0 p-t-8 bg-white">
-    <div class="diy-slideshow h-60vh">
+    <div class="diy-slideshow h-60vh ms-h-100vh">
       <figure class="show ">
-        <img src="images/home-carousel-1-m.jpg" width="100%" />
-        <header class="sale-details pos-a w-90p h-2em b-1rem r-1rem bg-white">
+        <picture>
+            <source srcset="images/home-carousel-1-m.jpg"" media="(max-width: 768px)">
+            <source srcset="images/home-carousel-1.jpg">
+            <img srcset="images/home-carousel-1.jpg" alt="My default image">
+        </picture>
+        <header class="sale-details pos-a w-90p h-2em b-1rem r-1rem bg-white ms-w-30p">
               <h1 class="sale-name p-l-05"><span class="hero-text-bg">WE SPLURGE.<br>
                 YOU WEAR.</span></h1>
                 <figcaption><a href="#">View More</a>.</figcaption> 
             </header>
       </figure>
       <figure>
-        <img src="images/home-carousel-4-m.jpg" width="100%" />
-        <header class="sale-details pos-a w-90p h-2em b-1rem r-1rem bg-white">
+        <picture>
+            <source srcset="images/home-carousel-4-m.jpg"" media="(max-width: 768px)">
+            <source srcset="images/home-carousel-4.jpg">
+            <img srcset="images/home-carousel-4.jpg" alt="My default image">
+        </picture>
+        <header class="sale-details pos-a w-90p h-2em b-1rem r-1rem bg-white ms-w-30p">
               <h1 class="sale-name p-l-05"><span class="hero-text-bg">FASHION KARMA<br>
               IT COMES AROUND.</span></h1>
                 <figcaption><a href="#">View More</a>.</figcaption> 
@@ -98,8 +106,12 @@
 
       </figure>
       <figure>
-        <img src="images/home-carousel-5-m.jpg" width="100%" />
-        <header class="sale-details pos-a w-90p h-2em b-1rem r-1rem bg-white">
+        <picture>
+            <source srcset="images/home-carousel-5-m.jpg"" media="(max-width: 768px)">
+            <source srcset="images/home-carousel-5.jpg">
+            <img srcset="images/home-carousel-5.jpg" alt="My default image">
+        </picture>
+        <header class="sale-details pos-a w-90p h-2em b-1rem r-1rem bg-white ms-w-30p">
               <h1 class="sale-name p-l-05"><span class="hero-text-bg">WANT IT?
                 <br>
                 SAY WHEN<br>
@@ -110,11 +122,18 @@
       </figure>
       <span class="prev">&laquo;</span>
       <span class="next">&raquo;</span>
+      <div class="slidesNav b-1rem p-a z-20 l-50p" style="margin-left: -40px;">
+        <ul>
+          <li class="d-ib"><a href="#" class=""><span></span></a></li>
+          <li class="d-ib"><a href="#" class="active"><span></span></a></li>
+          <li class="d-ib"><a href="#" class=""><span></span></a></li>
+          <li class="d-ib"><a href="#" class=""><span></span></a></li>
+        </ul>
+      </div>
     </div>  
-
   </section>
 
-  <section class="join pos-r m-h-2 m-b-1rem h-8rem m-t-1 bg-white">
+  <section class="join pos-r m-h-2 m-b-1rem h-8rem m-t-1 bg-white ms-w-50p center-h">
     <header class="join-details pos-a w-100p h-100p black t-a-c ">
       <h3 class="join-text l-0 ">Join Eon and rent all your looks. A members-only destination for the ultimate fashion experience.</h3>
     </header>
@@ -125,45 +144,48 @@
   </section>
 
   <section class="pos-r product-categories p-t-2">  
-    <div class="product-new-arrivals pos-r">
-      <header class="new-details pos-a w-50p h-2em b-1rem r-05rem">
-        <h1 class="sale-name f-s-s p-l-05">New Arrivals</h1>
-        <h3 class="sale-name f-s-xxs p-l-05">The new, new.</h3>
-      </header>
-      <div class="new-arrivals w-90p t-a-c m-1">
-        <img class="w-100p" src="images/new-arrivals.jpg" />
-      </div>
-    </div> 
+    
+    <div class="product-categories-wrapper w-100p t-a-c">
+      <div class="product-new-arrivals product-images pos-r w-100p ms-m-1 ms-w-40p ms-d-ib ov-h">
+        <header class="new-details pos-a w-50p h-2em b-1rem r-05rem">
+          <h1 class="sale-name f-s-s p-l-05">New Arrivals</h1>
+          <h3 class="sale-name f-s-xxs p-l-05">The new, new.</h3>
+        </header>
+        <div class="new-arrivals w-90p t-a-c m-1">
+          <img class="w-100p ms-h-a" src="images/new-arrivals.jpg" />
+        </div>
+      </div> 
 
-    <div class="product-outerwear pos-r">
-      <header class="outerwear-details pos-a w-50p h-2em b-1rem r-05rem">
-        <h1 class="sale-name f-s-ms p-l-05 white">Outerwear</h1>
-        <h3 class="sale-name f-s-xxs p-l-05 white">Leave without layers. Not today.</h3>
-      </header>
-      <div class="outerwear w-90p t-a-c m-1">
-        <img class="w-100p" src="images/outerwear.jpg" />
-      </div>
-    </div> 
+      <div class="product-outerwear product-images pos-r w-100p ms-m-1 ms-w-40p ms-d-ib ov-h">
+        <header class="outerwear-details pos-a w-50p h-2em b-1rem r-05rem">
+          <h1 class="sale-name f-s-ms p-l-05 white">Outerwear</h1>
+          <h3 class="sale-name f-s-xxs p-l-05 white">Leave without layers. Not today.</h3>
+        </header>
+        <div class="outerwear w-90p t-a-c m-1">
+          <img class="w-100p ms-h-a" src="images/outerwear.jpg" />
+        </div>
+      </div> 
 
-    <div class="product-tops pos-r">
-      <header class="tops-details pos-a w-50p h-2em b-1rem r-05rem">
-        <h1 class="sale-name f-s-ms p-l-05 white">Tops</h1>
-        <h3 class="sale-name f-s-xxs p-l-05 white">Tops... that talk.</h3>
-      </header>
-      <div class="tops w-90p t-a-c m-1">
-        <img class="w-100p" src="images/tops.jpg" />
-      </div>
-    </div> 
+      <div class="product-tops product-images  pos-r w-100p ms-m-1 ms-w-40p ms-d-ib ov-h">
+        <header class="tops-details pos-a w-50p h-2em b-1rem r-05rem">
+          <h1 class="sale-name f-s-ms p-l-05 white">Tops</h1>
+          <h3 class="sale-name f-s-xxs p-l-05 white">Tops... that talk.</h3>
+        </header>
+        <div class="tops w-90p t-a-c m-1">
+          <img class="w-100p ms-h-a" src="images/tops.jpg" />
+        </div>
+      </div> 
 
-    <div class="product-dresses pos-r">
-      <header class="dresses-details pos-a w-50p h-2em b-1rem r-05rem">
-        <h1 class="sale-name f-s-ms p-l-05 white">Dresses</h1>
-        <h3 class="sale-name f-s-xxs p-l-05 white">That say everything.</h3>
-      </header>
-      <div class="tops w-90p t-a-c m-1">
-        <img class="w-100p" src="images/dresses2.jpg" />
-      </div>
-    </div> 
+      <div class="product-dresses product-images pos-r w-100p ms-m-1 ms-w-40p ms-d-ib ov-h">
+        <header class="dresses-details pos-a w-50p h-2em b-1rem r-05rem">
+          <h1 class="sale-name f-s-ms p-l-05 white">Dresses</h1>
+          <h3 class="sale-name f-s-xxs p-l-05 white">That say everything.</h3>
+        </header>
+        <div class="tops w-90p t-a-c m-1">
+          <img class="w-100p" src="images/dresses2.jpg" />
+        </div>
+      </div> 
+    </div>
 
   </section>
 
