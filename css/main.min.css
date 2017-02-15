@@ -20,7 +20,7 @@ html {
 
 html, button, input, select, textarea {
   font-size: 1em;
-  font-family: 'museo-slab', 'Georgia', serif;
+  font-family: 'Open Sans', sans-serif;
   color: #222; }
 
 body {
@@ -31,7 +31,7 @@ body {
   font-size: 1em;
   line-height: 1.4;
   font-size: 16px;
-  font-family: 'museo-slab', 'Georgia', serif; }
+  font-family: 'Open Sans', sans-serif; }
 
 a {
   color: #222;
@@ -131,6 +131,9 @@ img {
    ========================================================================== */
 body {
   background-color: #f0eae7; }
+
+h1 {
+  font-family: "Oswald", sans-serif; }
 
 .nav {
   background: #fff;
@@ -254,8 +257,6 @@ figure {
 
 figcaption {
   position: absolute;
-  font-family: sans-serif;
-  font-size: .8em;
   bottom: .75em;
   right: .35em;
   padding: .25em;

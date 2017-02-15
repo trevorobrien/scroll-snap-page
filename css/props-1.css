@@ -1,4 +1,4 @@
-pos-s {
+.pos-s {
   position: static;
 }
 .pos-r {
@@ -945,6 +945,11 @@ pos-s {
 }
 .fl-r {
   float: right;
+}
+
+.m-center {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 767px) {
