@@ -41,6 +41,7 @@
 .bg-gray { background-color: #AAAAAA; }
 .bg-silver { background-color: #DDDDDD; }
 .bg-black { background-color: #111111; }
+.bg-white { background-color: #FFFFFF; }
 /* Colors */
 .navy { color: #001F3F; }
 .blue { color: #0074D9; }
@@ -78,7 +79,7 @@
 .border--purple { border-color: #B10DC9; }
 .border--maroon { border-color: #85144B; }
 .border--white { border-color: #FFFFFF; }
-.border--gray { border-color: #AAAAAA; }
+.border--gray { border-color: #CCCCCC; }
 .border--silver { border-color: #DDDDDD; }
 .border--black { border-color: #111111; }
 /* Fills for SVG */

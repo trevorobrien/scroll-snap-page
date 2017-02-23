@@ -99,9 +99,8 @@
 
 
 
-// font-family: 'Noticia Text', serif;
-// font-family: 'Oswald', sans-serif;
-// font-family: 'Open Sans', sans-serif;
+// font-family: 'Cardo', serif;
+//font-family: 'Josefin Sans', sans-serif;
 // END REMOVE IF THERE IS NO 3D
 
 @mixin headline-font($size)
@@ -109,12 +108,12 @@
   font-size: $size;
   font-family: $headline-font;
 }
-$headline-font: 'Oswald', sans-serif;
+$headline-font: 'Cardo', serif;
 
 @mixin body-font($size)
 {
   font-size: $size;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 $bgColor: #eee;
@@ -352,12 +351,7 @@ figure{
   transition: 1s opacity;
 }
 figcaption{
-  position: absolute;
   bottom: .75em;
-  right: .35em;
-  padding: .25em;
-  color: #fff;
-  background: rgba(0,0,0, .25);
   border-radius: 2px;
 }
 figcaption a{
@@ -489,7 +483,6 @@ footer{
     height: 8px;
     width: 8px;
     border: 0;
-    background: #333;
     left: 50%;
     top: 50%;
     margin: -4px 0 0 -4px;
@@ -524,7 +517,7 @@ footer{
     left: 0;
   }
   .product-images {
-    max-height: 18rem;
+    max-height: 20rem;
   }
 }
 

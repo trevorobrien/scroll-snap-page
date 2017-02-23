@@ -20,7 +20,7 @@ html {
 
 html, button, input, select, textarea {
   font-size: 1em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   color: #222; }
 
 body {
@@ -31,7 +31,7 @@ body {
   font-size: 1em;
   line-height: 1.4;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Josefin Sans', sans-serif; }
 
 a {
   color: #222;
@@ -133,7 +133,7 @@ body {
   background-color: #f0eae7; }
 
 h1 {
-  font-family: "Oswald", sans-serif; }
+  font-family: "Cardo", serif; }
 
 .nav {
   background: #fff;
@@ -256,12 +256,7 @@ figure {
   transition: 1s opacity; }
 
 figcaption {
-  position: absolute;
   bottom: .75em;
-  right: .35em;
-  padding: .25em;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.25);
   border-radius: 2px; }
 
 figcaption a {
@@ -368,7 +363,6 @@ p {
     height: 8px;
     width: 8px;
     border: 0;
-    background: #333;
     left: 50%;
     top: 50%;
     margin: -4px 0 0 -4px;
@@ -395,7 +389,7 @@ p {
   .overlay[data-state=open] {
     left: 0; }
   .product-images {
-    max-height: 18rem; } }
+    max-height: 20rem; } }
 
 /* =============================================================================
    Non-Semantic Helper Classes
