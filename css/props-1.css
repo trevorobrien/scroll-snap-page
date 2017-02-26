@@ -4422,6 +4422,9 @@
 .w-20rem {
   width: 20rem;
 }
+.w-30rem {
+  width: 30rem;
+}
 
 .w-80px {
   width: 80px;
@@ -5127,6 +5130,9 @@
 }
 .h-15rem {
   height: 15rem;
+}
+.h-30rem {
+  height: 30rem;
 }
 
 .min-h-0px {
