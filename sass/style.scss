@@ -102,18 +102,21 @@
 // font-family: 'Cardo', serif;
 //font-family: 'Josefin Sans', sans-serif;
 // END REMOVE IF THERE IS NO 3D
+//font-family: 'Montserrat', sans-serif;
+//font-family: 'Dosis', sans-serif;
+
 
 @mixin headline-font($size)
 {
   font-size: $size;
   font-family: $headline-font;
 }
-$headline-font: 'Cardo', serif;
+$headline-font: 'Montserrat', sans-serif;
 
 @mixin body-font($size)
 {
   font-size: $size;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 $bgColor: #eee;
@@ -406,30 +409,30 @@ p{
   background-color: rgba(240, 234, 231, 1);
 }
 
-.product-new-arrivals {
-  .new-details {
-    background-color: rgba(255,255,255,.9);
-    color: #383838;
- }
-}
+// .product-new-arrivals {
+//   .new-details {
+//     background-color: rgba(255,255,255,.9);
+//     color: #383838;
+//  }
+// }
 
-.product-outerwear {
-  .outerwear-details {
-    background-color: rgba(149, 93, 106, .9);
- }
-}
+// .product-outerwear {
+//   .outerwear-details {
+//     background-color: rgba(149, 93, 106, .9);
+//  }
+// }
 
-.product-tops {
-  .tops-details {
-    background-color: rgba(223, 180, 153, .9);
- }
-}
+// .product-tops {
+//   .tops-details {
+//     background-color: rgba(223, 180, 153, .9);
+//  }
+// }
 
-.product-dresses {
-  .dresses-details {
-    background-color: rgba(105, 117, 131, .9);
- }
-}
+// .product-dresses {
+//   .dresses-details {
+//     background-color: rgba(105, 117, 131, .9);
+//  }
+// }
 
 .circled {
   border: 3px solid #000000;

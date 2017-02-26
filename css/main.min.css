@@ -20,7 +20,7 @@ html {
 
 html, button, input, select, textarea {
   font-size: 1em;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #222; }
 
 body {
@@ -31,7 +31,7 @@ body {
   font-size: 1em;
   line-height: 1.4;
   font-size: 16px;
-  font-family: 'Josefin Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif; }
 
 a {
   color: #222;
@@ -133,7 +133,7 @@ body {
   background-color: #f0eae7; }
 
 h1 {
-  font-family: "Cardo", serif; }
+  font-family: "Montserrat", sans-serif; }
 
 .nav {
   background: #fff;
@@ -304,19 +304,6 @@ p {
 
 .join {
   background-color: #f0eae7; }
-
-.product-new-arrivals .new-details {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #383838; }
-
-.product-outerwear .outerwear-details {
-  background-color: rgba(149, 93, 106, 0.9); }
-
-.product-tops .tops-details {
-  background-color: rgba(223, 180, 153, 0.9); }
-
-.product-dresses .dresses-details {
-  background-color: rgba(105, 117, 131, 0.9); }
 
 .circled {
   border: 3px solid #000000;

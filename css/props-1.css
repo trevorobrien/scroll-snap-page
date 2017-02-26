@@ -5634,3 +5634,11 @@
 .bg-trans {
   background-color: transparent;
 }
+
+.understroke {
+  display: block;
+  border-bottom: 1px solid #000;
+  width: 30px;
+  margin: 10px auto;
+  background: none;
+}
