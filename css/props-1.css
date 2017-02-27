@@ -4422,6 +4422,9 @@
 .w-20rem {
   width: 20rem;
 }
+.w-25rem {
+  width: 25rem;
+}
 .w-30rem {
   width: 30rem;
 }
@@ -4695,6 +4698,9 @@
   }
   .ms-w-20rem {
     width: 20rem;
+  }
+  .ms-w-25rem {
+    width: 25rem;
   }
 
   .ms-w-80px {
@@ -5125,11 +5131,20 @@
 .h-8rem {
   height: 8rem;
 }
+.h-10rem {
+  height: 10rem;
+}
 .h-13rem {
   height: 13rem;
 }
 .h-15rem {
   height: 15rem;
+}
+.h-20rem {
+  height: 20rem;
+}
+.h-25rem {
+  height: 25rem;
 }
 .h-30rem {
   height: 30rem;
@@ -5227,6 +5242,9 @@
   }
   .ms-h-5rem {
     height: 5rem;
+  }
+  .ms-h-25rem {
+    height: 25rem;
   }
   .ms-min-h-100p {
     min-height: 100%;
@@ -5639,6 +5657,18 @@
 /* Color */
 .bg-trans {
   background-color: transparent;
+}
+
+.dropcap {
+  float       : left;
+  font-size   : 3.26em;
+  line-height : 0.5;
+  margin      : 0.205em 0.153em 0 0;
+}
+
+.dropcap + span{
+  margin-left : -0.5em;
+}
 }
 
 .understroke {
