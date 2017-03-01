@@ -82,14 +82,6 @@ $(function(){
     }
   });
 
-  // $('.hamburger').on('click',function (e) {
-  //   $('.overlay').addClass('in');
-  // })
-
-  // $('.close').on('click',function (e) {
-  //   $('.overlay').removeClass('in');
-  // })
-
   setTimeout(function() {
       showCurrent();
   }, 3000);
