@@ -90,6 +90,10 @@ $(function(){
   //   $('.overlay').removeClass('in');
   // })
 
+  setTimeout(function() {
+      showCurrent();
+  }, 3000);
+
 
   $(window).scroll(function() {
     $('.sale-name').css('top', ($('.carousel-image').height() - $('body').scrollTop() / 4));
@@ -116,81 +120,19 @@ $(function(){
     e.preventDefault();
   };
 
-  var prefix = getBrowserPrefix();
-  var hidden = hiddenProperty(prefix);
-  var visibilityState = visibilityState(prefix);
-  var visibilityEvent = visibilityEvent(prefix);
-
-  document.addEventListener(visibilityEvent, function(event) {
-          if (document[hidden]) {
-              $('.overlay').addClass('in');
-              console.log('in')
-              
-          } else {
-              console.log('out')
-          }
-    });
-
-  // Get Browser-Specifc Prefix
-  function getBrowserPrefix() {
-     
-    // Check for the unprefixed property.
-    if ('hidden' in document) {
-      return null;
-    }
-   
-    // All the possible prefixes.
-    var browserPrefixes = ['moz', 'ms', 'o', 'webkit'];
-   
-    for (var i = 0; i < browserPrefixes.length; i++) {
-      var prefix = browserPrefixes[i] + 'Hidden';
-      if (prefix in document) {
-        return browserPrefixes[i];
-      }
-    }
-   
-    // The API is not supported in browser.
-    return null;
-  }
-   
-  // Get Browser Specific Hidden Property
-  function hiddenProperty(prefix) {
-    if (prefix) {
-      return prefix + 'Hidden';
-    } else {
-      return 'hidden';
-    }
-  }
-   
-  // Get Browser Specific Visibility State
-  function visibilityState(prefix) {
-    if (prefix) {
-      return prefix + 'VisibilityState';
-    } else {
-      return 'visibilityState';
-    }
-  }
-   
-  // Get Browser Specific Event
-  function visibilityEvent(prefix) {
-    if (prefix) {
-      return prefix + 'visibilitychange';
-    } else {
-      return 'visibilitychange';
-    }
-  }
-
-
   var counter = 0, // to keep track of current slide
       $items = $('.diy-slideshow figure'), // a collection of all of the slides, caching for performance
       numItems = $items.length; // total number of slides
+  console.log($items)
 
   // this function is what cycles the slides, showing the next or previous slide and hiding all the others
   var showCurrent = function(){
-      var itemToShow = Math.abs(counter%numItems);// uses remainder (aka modulo) operator to get the actual index of the element to show  
-     
+    var itemToShow = Math.abs(counter%numItems);// uses remainder (aka modulo) operator to get the actual index of the element to show  
+    console.log(itemToShow)
     $items.removeClass('show'); // remove .show from whichever element currently has it
-    $items.eq(itemToShow).addClass('show');    
+    $items.eq(itemToShow).addClass('show'); 
+    counter++;
+    { setTimeout(function() { showCurrent() }, 6000); }   
   };
 
   // add click events to prev & next buttons 
@@ -203,17 +145,19 @@ $(function(){
       showCurrent(); 
   });
 
+ 
   // if touch events are supported then add swipe interactions using TouchSwipe https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
-  // if('ontouchstart' in window){
-  //   $('.diy-slideshow').swipe({
-  //     swipeLeft:function() {
-  //       counter++;
-  //       showCurrent(); 
-  //     },
-  //     swipeRight:function() {
-  //       counter--;
-  //       showCurrent(); 
-  //     }
-  //   });
-  // }
+  if('ontouchstart' in window){
+    console.log('true')
+    $('.diy-slideshow').swipe({
+      swipeLeft:function() {
+        counter++;
+        showCurrent(); 
+      },
+      swipeRight:function() {
+        counter--;
+        showCurrent(); 
+      }
+    });
+  }
 
