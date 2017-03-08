@@ -1,7 +1,7 @@
 {
-  "name": "eon",
-  "version": "1.0.0",
-  "description": "eon",
+  "name": "eonid",
+  "version": "0.0.1",
+  "description": "eonid",
   "dependencies": {},
   "devDependencies": {
     "clean-css": "^3.4.19",

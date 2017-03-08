@@ -38,10 +38,11 @@
 .bg-purple { background-color: #B10DC9; }
 .bg-maroon { background-color: #85144B; }
 .bg-white { background-color: #FFFFFF; }
-.bg-gray { background-color: #AAAAAA; }
+.bg-gray { background-color: #F0F2F2; }
 .bg-silver { background-color: #DDDDDD; }
 .bg-black { background-color: #111111; }
 .bg-white { background-color: #FFFFFF; }
+.bg-softblack { background-color: #333; }
 /* Colors */
 .navy { color: #001F3F; }
 .blue { color: #0074D9; }

@@ -137,6 +137,8 @@ $(function(){
       showCurrent(); 
   });
 
+  // document.getElementsByClassName(".diy-slideshow ").onmouseover = function() { alert('This is the string.'); };
+
  
   // if touch events are supported then add swipe interactions using TouchSwipe https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
   if('ontouchstart' in window){
