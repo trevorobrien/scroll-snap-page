@@ -2290,6 +2290,12 @@
   .ms-m-a {
     margin: auto;
   }
+  .ms-m-l-a {
+    margin-left: auto;
+  }
+  .ms-m-oa {
+    margin: 0 auto;
+  }
   .ms-m-0 {
     margin: 0;
   }
