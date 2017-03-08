@@ -1156,6 +1156,9 @@
 .p-t-20 {
   padding-top: 20rem;
 }
+.p-t-30 {
+  padding-top: 30rem;
+}
 
 .p-r-0 {
   padding-right: 0rem;
@@ -1457,6 +1460,9 @@
   .ms-p-t-13 {
     padding-top: 13rem;
   }
+  .ms-p-t-20 {
+    padding-top: 20rem;
+  }
 
   .ms-p-r-0 {
     padding-right: 0rem;
@@ -1540,6 +1546,9 @@
   }
   .ms-p-l-5 {
     padding-left: 5rem;
+  }
+  .ms-p-l-6 {
+    padding-left: 6rem;
   }
   .ms-p-l-8 {
     padding-left: 8rem;
@@ -2995,6 +3004,11 @@
 }
 .f-s-xl {
   font-size: 2.3rem;
+  line-height: 1.2;
+  margin-left: -3px;
+}
+.f-s-mxl {
+  font-size: 4rem;
   line-height: 1.2;
   margin-left: -3px;
 }
