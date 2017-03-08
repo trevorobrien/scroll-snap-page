@@ -106,6 +106,9 @@
 .t--5rem {
   top: -5rem;
 }
+.t--15rem {
+  top: -15rem;
+}
 
 .b-a {
   bottom: auto;
@@ -5703,7 +5706,6 @@
     width: 11rem;
     height: 2.5rem;
     float: right;
-    margin-right: 2rem;
 }
 
 .top-btn:hover  { 
@@ -5722,5 +5724,15 @@
 
 .fs-it {
   font-style: italic;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    display: none;
+  }
+  .nav-btn {
+
+  }
+
 }
 
