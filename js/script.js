@@ -92,25 +92,25 @@ $(function(){
   }); 
 })
 
-  var nav = document.querySelector('.hamburger');
-  var close = document.querySelector('.close');
+  // var nav = document.querySelector('.hamburger');
+  // var close = document.querySelector('.close');
 
 
-  var toggleState = function (elem, one, two) {
-    var elem = document.querySelector(elem);
-    // elem.className += "";
-    elem.setAttribute('data-state', elem.getAttribute('data-state') === one ? two : one);
-  };
+  // var toggleState = function (elem, one, two) {
+  //   var elem = document.querySelector(elem);
+  //   // elem.className += "";
+  //   elem.setAttribute('data-state', elem.getAttribute('data-state') === one ? two : one);
+  // };
 
-  nav.onclick = function (e) {
-    toggleState('.overlay', 'closed', 'open');
-    e.preventDefault();
-  };
+  // nav.onclick = function (e) {
+  //   toggleState('.overlay', 'closed', 'open');
+  //   e.preventDefault();
+  // };
 
-  close.onclick = function (e) {
-    toggleState('.overlay', 'closed', 'open');
-    e.preventDefault();
-  };
+  // close.onclick = function (e) {
+  //   toggleState('.overlay', 'closed', 'open');
+  //   e.preventDefault();
+  // };
 
   var counter = 0, // to keep track of current slide
       $items = $('.diy-slideshow figure'), // a collection of all of the slides, caching for performance
@@ -124,16 +124,16 @@ $(function(){
     $items.removeClass('show'); // remove .show from whichever element currently has it
     $items.eq(itemToShow).addClass('show'); 
     counter++;
-    { setTimeout(function() { showCurrent() }, 6000); }   
+    // { setTimeout(function() { showCurrent() }, 6000); }   
   };
 
   // add click events to prev & next buttons 
   $('.next').on('click', function(){
-      counter++;
+      // counter++;
       showCurrent(); 
   });
   $('.prev').on('click', function(){
-      counter--;
+      // counter--;
       showCurrent(); 
   });
 

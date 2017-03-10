@@ -143,6 +143,14 @@ h1 {
   display: block;
   overflow: hidden; }
 
+.slide {
+  opacity: 0;
+  transition: 1s opacity;
+  display: inline-block; }
+  .slide.show {
+    opacity: 1;
+    z-index: 10; }
+
 figure {
   position: absolute;
   opacity: 0;

@@ -1143,6 +1143,9 @@
 .p-t-5 {
   padding-top: 5rem;
 }
+.p-t-6 {
+  padding-top: 6rem;
+}
 .p-t-8 {
   padding-top: 8rem;
 }
@@ -1446,7 +1449,7 @@
     padding-top: 5rem;
   }
   .ms-p-t-6 {
-    padding-top: 7rem;
+    padding-top: 6rem;
   }
   .ms-p-t-7 {
     padding-top: 7rem;
@@ -1515,6 +1518,12 @@
   }
   .ms-p-b-5 {
     padding-bottom: 5rem;
+  }
+  .ms-p-b-6 {
+    padding-bottom: 6rem;
+  }
+  .ms-p-b-7 {
+    padding-bottom: 7rem;
   }
   .ms-p-b-8 {
     padding-bottom: 8rem;
@@ -5744,6 +5753,10 @@
 
 .fs-it {
   font-style: italic;
+}
+
+.caps {
+  text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
