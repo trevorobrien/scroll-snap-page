@@ -253,6 +253,9 @@ h6 {
   }
 }
 
+.dots-image {
+  display: none;
+}
 
 figure{
   position: absolute;
@@ -407,12 +410,24 @@ footer{
   }
   a {
     display: block;
-        position: relative;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        cursor: pointer;
-        text-decoration: none;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  .active{
+    span{
+       -webkit-transform: scale3d(1.3, 1.3, 1.3);
+       transform: scale3d(1.3, 1.3, 1.3);
+       background-color: red;
+      
+      &:after{
+      height: 100%;
+      }
+    }
   }
 }
 
@@ -441,6 +456,9 @@ footer{
     //   height: 3.125rem;
     //   background-color: #fff;
     // }
+  }
+  .dots-image {
+    display: inline-block;
   }
 }
 
