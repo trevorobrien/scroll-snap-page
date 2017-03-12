@@ -136,7 +136,7 @@ h1 {
   font-family: "Montserrat", sans-serif; }
 
 .main {
-  margin-top: calc(100vh - 10px); }
+  margin-top: calc(100vh - 32px); }
 
 .diy-slideshow {
   position: relative;
@@ -146,10 +146,13 @@ h1 {
 .slide {
   opacity: 0;
   transition: 1s opacity;
-  display: inline-block; }
+  top: 0;
+  position: absolute;
+  display: none !important; }
   .slide.show {
     opacity: 1;
-    z-index: 10; }
+    z-index: 10;
+    display: block !important; }
 
 figure {
   position: absolute;
@@ -277,7 +280,9 @@ p {
   .overlay[data-state=open] {
     left: 0; }
   .product-images {
-    max-height: 20rem; } }
+    max-height: 20rem; }
+  .main {
+    margin-top: calc(100vh - 1rem); } }
 
 /* =============================================================================
    Non-Semantic Helper Classes
