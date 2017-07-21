@@ -257,6 +257,12 @@ h6 {
   display: none;
 }
 
+.news-article {
+  position: absolute;
+  opacity: 1;
+  transition: 1s opacity;
+}
+
 figure{
   position: absolute;
   opacity: 0;
