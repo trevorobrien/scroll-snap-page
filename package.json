@@ -1,7 +1,7 @@
 {
-  "name": "eonid",
+  "name": "Smooth-Panel-Scroll",
   "version": "0.0.1",
-  "description": "eonid",
+  "description": "Smooth Panel Scroll",
   "dependencies": {},
   "devDependencies": {
     "clean-css": "^3.4.19",
@@ -11,21 +11,24 @@
     "node-sass": "^3.10.0",
     "nodemon": "^1.10.2",
     "uglify-js": "^2.7.3",
-    "watch": "^0.19.2"
+    "watch": "^0.19.2",
+    "parallelshell": "latest",
+    "live-reload": "latest"
+
   },
   "scripts": {
     "info": "echo 'npm as a build tool'",
-    "lint": "echo '=> linting' && jshint test/*.js",
-    "test": "echo '=> testing' && mocha test/*.js",
-    "minify:js": "echo '=> minify:js' && uglifyjs js/test.js -o dist/public/js/main.min.js",
-    "minify:css": "echo '=> minify:css' && cleancss css/main.min.css -o dist/public/css/main.min.css",
-    "html":   "cp index.html dist/public/",
-    "assets": "cp -R images/ dist/public/images/",
+    "lint": "echo '=> linting' && jshint dev/*.js",
+    "livereload": "live-reload --port 8080 dev/",
+    "minify:js": "echo '=> minify:js' -o dist/public/js/main.min.js",
+    "minify:css": "echo '=> minify:css' && cleancss dev/css/main.min.css -o dist/public/css/main.min.css",
+    "html":   "cp dev/index.html dist/public/",
+    "assets": "cp -R dev/images/ dist/public/images/",
     "build": "echo '=> building' && npm run minify:js -s && npm run minify:css -s && npm run html && npm run assets",
-    "build:sass": "node-sass sass/style.scss css/main.min.css",
+    "build:sass": "node-sass dev/sass/style.scss dev/css/main.min.css --output-style compressed",
     "watch:sass": "npm run build:sass -- -w",
     "pretest": "npm run lint -s",
-    "start": "http-server"
+    "start": "parallelshell 'http-server dev/' 'npm run livereload' 'npm run build:sass -- -w'"
   },
   "author": "Experiment",
   "license": "Open"

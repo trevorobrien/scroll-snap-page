@@ -5665,7 +5665,6 @@
   z-index: 50;
 }
 
-
 /* Decorations */
 
 .bx-sh-soft {
@@ -5726,30 +5725,6 @@
   margin: 0 auto;
 }
 
-.top-btn  { 
-    border: 2px solid #ee6059;
-    background-color: #ee6059;
-    color: white;
-    border-radius: 2px;
-    padding: 10px 35px;
-    margin-left: 15px;
-    transition: all .3s;
-    text-transform: uppercase;
-    width: 11rem;
-    height: 2.5rem;
-    float: right;
-}
-
-.top-btn:hover  { 
-    border: 2px solid #ee6059;
-    background-color: #ff2059;
-}
-
-.nav {
-  background: #fff;
-  opacity: 1;
-}
-
 .nav-fade {
   opacity: 0.9;
 }
@@ -5762,13 +5737,5 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 767px) {
-  .logo {
-    display: none;
-  }
-  .nav-btn {
 
-  }
-
-}
 
